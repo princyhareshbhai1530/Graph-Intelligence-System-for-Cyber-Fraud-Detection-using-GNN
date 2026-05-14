@@ -1,0 +1,76 @@
+{"ts_utc": "2026-02-15T09:42:35.950692+00:00", "action": "LOAD", "details": {"rows": 1048575, "cols": ["transaction_id", "timestamp", "sender_account", "receiver_account", "amount", "transaction_type", "merchant_category", "location", "device_used", "is_fraud", "fraud_type", "time_since_last_transaction", "spending_deviation_score", "velocity_score", "geo_anomaly_score", "payment_channel", "ip_address", "device_hash"], "path": "data/Financial Transactions Dataset for Fraud Detection.csv"}}
+{"ts_utc": "2026-02-15T09:42:37.927805+00:00", "action": "CLEAN_COMPLETE", "details": {"rows_before": 1048575, "rows_after": 1048575}}
+{"ts_utc": "2026-02-15T09:42:49.667745+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\cleaned.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T09:42:51.472272+00:00", "action": "ENRICH_TIME_FEATURES", "details": {"added": ["hour", "dayofweek", "is_weekend", "date"]}}
+{"ts_utc": "2026-02-15T09:43:41.806186+00:00", "action": "ENRICH_ROLLING_ACCOUNT", "details": {"added": ["tx_count_24h", "amt_sum_24h", "unique_receivers_day"]}}
+{"ts_utc": "2026-02-15T09:44:00.881424+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T09:44:21.182486+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\enriched.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T09:44:52.239432+00:00", "action": "AUGMENT_ADDED_ROWS", "details": {"added_rows": 138, "patterns": {"rings": 3, "fanout": 3}, "inject_fraction": 0.0015}}
+{"ts_utc": "2026-02-15T09:45:12.792555+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T09:45:37.024851+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\augmented.csv", "rows": 1048713}}
+{"ts_utc": "2026-02-15T09:48:57.545515+00:00", "action": "LOAD", "details": {"rows": 1048575, "cols": ["transaction_id", "timestamp", "sender_account", "receiver_account", "amount", "transaction_type", "merchant_category", "location", "device_used", "is_fraud", "fraud_type", "time_since_last_transaction", "spending_deviation_score", "velocity_score", "geo_anomaly_score", "payment_channel", "ip_address", "device_hash"], "path": "data/Financial Transactions Dataset for Fraud Detection.csv"}}
+{"ts_utc": "2026-02-15T09:48:59.465088+00:00", "action": "CLEAN_COMPLETE", "details": {"rows_before": 1048575, "rows_after": 1048575}}
+{"ts_utc": "2026-02-15T09:49:11.120549+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\cleaned.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T09:49:12.859354+00:00", "action": "ENRICH_TIME_FEATURES", "details": {"added": ["hour", "dayofweek", "is_weekend", "date"]}}
+{"ts_utc": "2026-02-15T09:50:02.429394+00:00", "action": "ENRICH_ROLLING_ACCOUNT", "details": {"added": ["tx_count_24h", "amt_sum_24h", "unique_receivers_day"]}}
+{"ts_utc": "2026-02-15T09:50:21.958966+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T09:50:42.194005+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\enriched.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T09:51:16.316543+00:00", "action": "AUGMENT_ADDED_ROWS", "details": {"added_rows": 138, "patterns": {"rings": 3, "fanout": 3}, "inject_fraction": 0.0015}}
+{"ts_utc": "2026-02-15T09:51:36.349426+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T09:52:00.537800+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\augmented.csv", "rows": 1048713}}
+{"ts_utc": "2026-02-15T10:32:46.920538+00:00", "action": "LOAD", "details": {"rows": 1048575, "cols": ["transaction_id", "timestamp", "sender_account", "receiver_account", "amount", "transaction_type", "merchant_category", "location", "device_used", "is_fraud", "fraud_type", "time_since_last_transaction", "spending_deviation_score", "velocity_score", "geo_anomaly_score", "payment_channel", "ip_address", "device_hash"], "path": "data/Financial Transactions Dataset for Fraud Detection.csv"}}
+{"ts_utc": "2026-02-15T10:32:48.831805+00:00", "action": "CLEAN_COMPLETE", "details": {"rows_before": 1048575, "rows_after": 1048575}}
+{"ts_utc": "2026-02-15T10:33:00.729438+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\cleaned.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T10:33:02.506598+00:00", "action": "ENRICH_TIME_FEATURES", "details": {"added": ["hour", "dayofweek", "is_weekend", "date"]}}
+{"ts_utc": "2026-02-15T10:33:53.034647+00:00", "action": "ENRICH_ROLLING_ACCOUNT", "details": {"added": ["tx_count_24h", "amt_sum_24h", "unique_receivers_day"]}}
+{"ts_utc": "2026-02-15T10:34:13.015196+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T10:34:33.243776+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\enriched.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T10:35:07.260872+00:00", "action": "AUGMENT_ADDED_ROWS", "details": {"added_rows": 138, "patterns": {"rings": 3, "fanout": 3}, "inject_fraction": 0.0015}}
+{"ts_utc": "2026-02-15T10:35:27.030421+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T10:35:51.632777+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\augmented.csv", "rows": 1048713}}
+{"ts_utc": "2026-02-15T10:44:30.271291+00:00", "action": "LOAD", "details": {"rows": 1048575, "cols": ["transaction_id", "timestamp", "sender_account", "receiver_account", "amount", "transaction_type", "merchant_category", "location", "device_used", "is_fraud", "fraud_type", "time_since_last_transaction", "spending_deviation_score", "velocity_score", "geo_anomaly_score", "payment_channel", "ip_address", "device_hash"], "path": "data/Financial Transactions Dataset for Fraud Detection.csv"}}
+{"ts_utc": "2026-02-15T10:44:32.195486+00:00", "action": "CLEAN_COMPLETE", "details": {"rows_before": 1048575, "rows_after": 1048575}}
+{"ts_utc": "2026-02-15T10:44:43.991677+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\cleaned.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T10:44:45.831712+00:00", "action": "ENRICH_TIME_FEATURES", "details": {"added": ["hour", "dayofweek", "is_weekend", "date"]}}
+{"ts_utc": "2026-02-15T10:45:36.819302+00:00", "action": "ENRICH_ROLLING_ACCOUNT", "details": {"added": ["tx_count_24h", "amt_sum_24h", "unique_receivers_day"]}}
+{"ts_utc": "2026-02-15T10:45:58.044582+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T10:46:18.450161+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\enriched.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T10:46:52.640292+00:00", "action": "AUGMENT_ADDED_ROWS", "details": {"added_rows": 138, "patterns": {"rings": 3, "fanout": 3}, "inject_fraction": 0.0015}}
+{"ts_utc": "2026-02-15T10:47:13.846346+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T10:47:38.343687+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\augmented.csv", "rows": 1048713}}
+{"ts_utc": "2026-02-15T11:28:23.381733+00:00", "action": "LOAD", "details": {"rows": 1048575, "cols": ["transaction_id", "timestamp", "sender_account", "receiver_account", "amount", "transaction_type", "merchant_category", "location", "device_used", "is_fraud", "fraud_type", "time_since_last_transaction", "spending_deviation_score", "velocity_score", "geo_anomaly_score", "payment_channel", "ip_address", "device_hash"], "path": "data/Financial Transactions Dataset for Fraud Detection.csv"}}
+{"ts_utc": "2026-02-15T11:28:25.323523+00:00", "action": "CLEAN_COMPLETE", "details": {"rows_before": 1048575, "rows_after": 1048575}}
+{"ts_utc": "2026-02-15T11:28:37.344033+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\cleaned.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T11:28:39.275503+00:00", "action": "ENRICH_TIME_FEATURES", "details": {"added": ["hour", "dayofweek", "is_weekend", "date"]}}
+{"ts_utc": "2026-02-15T11:29:30.742261+00:00", "action": "ENRICH_ROLLING_ACCOUNT", "details": {"added": ["tx_count_24h", "amt_sum_24h", "unique_receivers_day"]}}
+{"ts_utc": "2026-02-15T11:29:51.971667+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T11:30:12.877713+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\enriched.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-15T11:30:48.125404+00:00", "action": "AUGMENT_ADDED_ROWS", "details": {"added_rows": 138, "patterns": {"rings": 3, "fanout": 3}, "inject_fraction": 0.0015}}
+{"ts_utc": "2026-02-15T11:31:09.056628+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-15T11:31:34.037031+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\augmented.csv", "rows": 1048713}}
+{"ts_utc": "2026-02-17T04:47:47.386775+00:00", "action": "LOAD", "details": {"rows": 1048575, "cols": ["transaction_id", "timestamp", "sender_account", "receiver_account", "amount", "transaction_type", "merchant_category", "location", "device_used", "is_fraud", "fraud_type", "time_since_last_transaction", "spending_deviation_score", "velocity_score", "geo_anomaly_score", "payment_channel", "ip_address", "device_hash"], "path": "data/Financial Transactions Dataset for Fraud Detection.csv"}}
+{"ts_utc": "2026-02-17T04:47:49.487009+00:00", "action": "CLEAN_COMPLETE", "details": {"rows_before": 1048575, "rows_after": 1048575}}
+{"ts_utc": "2026-02-17T04:48:02.829514+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\cleaned.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-17T04:48:04.790231+00:00", "action": "ENRICH_TIME_FEATURES", "details": {"added": ["hour", "dayofweek", "is_weekend", "date"]}}
+{"ts_utc": "2026-02-17T04:48:59.701124+00:00", "action": "ENRICH_ROLLING_ACCOUNT", "details": {"added": ["tx_count_24h", "amt_sum_24h", "unique_receivers_day"]}}
+{"ts_utc": "2026-02-17T04:49:19.396245+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-17T04:49:42.115307+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\enriched.csv", "rows": 1048575}}
+{"ts_utc": "2026-02-17T04:50:16.924004+00:00", "action": "AUGMENT_ADDED_ROWS", "details": {"added_rows": 138, "patterns": {"rings": 3, "fanout": 3}, "inject_fraction": 0.0015}}
+{"ts_utc": "2026-02-17T04:50:37.991349+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-02-17T04:51:04.414297+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\augmented.csv", "rows": 1048713}}
+{"ts_utc": "2026-03-06T10:23:06.025972+00:00", "action": "LOAD", "details": {"rows": 1048575, "cols": ["transaction_id", "timestamp", "sender_account", "receiver_account", "amount", "transaction_type", "merchant_category", "location", "device_used", "is_fraud", "fraud_type", "time_since_last_transaction", "spending_deviation_score", "velocity_score", "geo_anomaly_score", "payment_channel", "ip_address", "device_hash"], "path": "data/Financial Transactions Dataset for Fraud Detection.csv"}}
+{"ts_utc": "2026-03-06T10:23:07.961254+00:00", "action": "CLEAN_COMPLETE", "details": {"rows_before": 1048575, "rows_after": 1048575}}
+{"ts_utc": "2026-03-06T10:23:19.731231+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\cleaned.csv", "rows": 1048575}}
+{"ts_utc": "2026-03-06T10:23:21.528852+00:00", "action": "ENRICH_TIME_FEATURES", "details": {"added": ["hour", "dayofweek", "is_weekend", "date"]}}
+{"ts_utc": "2026-03-06T10:24:12.690309+00:00", "action": "ENRICH_ROLLING_ACCOUNT", "details": {"added": ["tx_count_24h", "amt_sum_24h", "unique_receivers_day"]}}
+{"ts_utc": "2026-03-06T10:24:37.266623+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-03-06T10:57:30.169198+00:00", "action": "LOAD", "details": {"rows": 1048575, "cols": ["transaction_id", "timestamp", "sender_account", "receiver_account", "amount", "transaction_type", "merchant_category", "location", "device_used", "is_fraud", "fraud_type", "time_since_last_transaction", "spending_deviation_score", "velocity_score", "geo_anomaly_score", "payment_channel", "ip_address", "device_hash"], "path": "data/Financial Transactions Dataset for Fraud Detection.csv"}}
+{"ts_utc": "2026-03-06T10:57:33.740012+00:00", "action": "CLEAN_COMPLETE", "details": {"rows_before": 1048575, "rows_after": 1048575}}
+{"ts_utc": "2026-03-06T10:57:57.345386+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\cleaned.csv", "rows": 1048575}}
+{"ts_utc": "2026-03-06T10:58:00.355447+00:00", "action": "ENRICH_TIME_FEATURES", "details": {"added": ["hour", "dayofweek", "is_weekend", "date"]}}
+{"ts_utc": "2026-03-06T10:59:39.766175+00:00", "action": "ENRICH_ROLLING_ACCOUNT", "details": {"added": ["tx_count_24h", "amt_sum_24h", "unique_receivers_day"]}}
+{"ts_utc": "2026-03-06T11:00:06.967171+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-03-06T11:00:44.641727+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\enriched.csv", "rows": 1048575}}
+{"ts_utc": "2026-03-06T11:01:50.279669+00:00", "action": "AUGMENT_ADDED_ROWS", "details": {"added_rows": 138, "patterns": {"rings": 3, "fanout": 3}, "inject_fraction": 0.0015}}
+{"ts_utc": "2026-03-06T11:02:25.295625+00:00", "action": "ENRICH_DEVICE_IP_SIGNALS", "details": {"added": ["device_accounts_count", "ip_accounts_count", "device_fraud_rate", "ip_fraud_rate"]}}
+{"ts_utc": "2026-03-06T11:03:17.077488+00:00", "action": "SAVE", "details": {"path": "data/elite_data\\augmented.csv", "rows": 1048713}}
